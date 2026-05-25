@@ -1,0 +1,349 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Orbitron", Arial, sans-serif;
+	background: #0d0d0f;
+	color: #ffffff;
+	line-height: 1.6;
+}
+
+/* Glowing neon accent */
+:root {
+	--neon-red: #ff2e63;
+	--neon-pink: #ff5ea6;
+	--dark-bg: #0d0d0f;
+	--glass: rgba(255, 255, 255, 0.05);
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+header {
+	background: #111116;
+	padding: 25px;
+	text-align: center;
+	border-bottom: 2px solid var(--neon-red);
+	box-shadow: 0 0 20px var(--neon-red);
+}
+
+header h1 {
+	font-size: 2.7rem;
+	margin-bottom: 5px;
+	color: var(--neon-red);
+	text-shadow: 0 0 15px var(--neon-red);
+}
+
+.subtitle {
+	font-size: 1.1rem;
+	color: var(--neon-pink);
+	margin-bottom: 15px;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 18px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.1rem;
+	padding: 8px 12px;
+	transition: 0.3s ease;
+}
+
+nav a:hover {
+	color: var(--neon-red);
+	text-shadow: 0 0 10px var(--neon-red);
+}
+
+/* ===========================
+   HERO SECTION
+   =========================== */
+.hero {
+	padding: 120px 20px;
+	background: linear-gradient(to bottom, #1a1a21, #0d0d0f);
+	text-align: center;
+	border-bottom: 2px solid var(--neon-pink);
+}
+
+.hero h2 {
+	font-size: 2.6rem;
+	color: var(--neon-red);
+	text-shadow: 0 0 12px var(--neon-red);
+}
+
+.hero p {
+	margin-top: 10px;
+	font-size: 1.3rem;
+	color: #e6e6e6;
+}
+
+/* ===========================
+   SECTION TITLE
+   =========================== */
+.section-title {
+	text-align: center;
+	font-size: 2.2rem;
+	margin: 50px 0 20px;
+	color: var(--neon-red);
+	text-shadow: 0 0 14px var(--neon-red);
+}
+
+/* ===========================
+   SEARCH BARS
+   =========================== */
+#teamSearch,
+#ruleSearch {
+	width: 70%;
+	display: block;
+	margin: 0 auto 25px;
+	padding: 12px 15px;
+	border-radius: 8px;
+	border: 2px solid var(--neon-pink);
+	background: #111;
+	color: white;
+	font-size: 1.1rem;
+	transition: 0.3s;
+}
+
+#teamSearch:focus,
+#ruleSearch:focus {
+	outline: none;
+	border-color: var(--neon-red);
+	box-shadow: 0 0 12px var(--neon-red);
+}
+
+/* ===========================
+   TEAM GRID
+   =========================== */
+.team-grid {
+	width: 90%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 25px;
+}
+
+.team-card {
+	background: var(--glass);
+	padding: 20px;
+	border: 2px solid var(--neon-pink);
+	border-radius: 10px;
+	-webkit-backdrop-filter: blur(6px);
+	        backdrop-filter: blur(6px);
+	transition: 0.4s ease;
+	cursor: pointer;
+}
+
+.team-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 0 25px var(--neon-red);
+	border-color: var(--neon-red);
+}
+
+.team-card h3 {
+	color: var(--neon-red);
+	margin-bottom: 8px;
+	text-shadow: 0 0 10px var(--neon-red);
+}
+
+.team-card p {
+	font-size: 0.95rem;
+	opacity: 0.9;
+}
+
+/* ===========================
+   KEY PLAYERS SECTION
+   =========================== */
+#playersContainer {
+	width: 90%;
+	margin: auto;
+}
+
+.player-block {
+	background: #15151b;
+	padding: 20px;
+	border-left: 4px solid var(--neon-red);
+	margin-bottom: 25px;
+	border-radius: 8px;
+	box-shadow: 0 0 12px #000;
+}
+
+.player-block h3 {
+	color: var(--neon-pink);
+	margin-bottom: 10px;
+}
+
+.player-list {
+	margin-left: 15px;
+}
+
+.player-list li {
+	margin-bottom: 6px;
+}
+
+/* ===========================
+   RULES
+   =========================== */
+#rulesList {
+	width: 85%;
+	margin: auto;
+	list-style: none;
+}
+
+#rulesList li {
+	padding: 15px;
+	margin-bottom: 15px;
+	background: #15151b;
+	border-left: 4px solid var(--neon-pink);
+	border-radius: 6px;
+	transition: 0.3s;
+}
+
+#rulesList li:hover {
+	border-left-color: var(--neon-red);
+	box-shadow: 0 0 15px var(--neon-red);
+}
+
+/* ===========================
+   FAQ
+   =========================== */
+.faq-item {
+	width: 85%;
+	margin: 20px auto;
+	background: #15151b;
+	border: 1px solid var(--neon-pink);
+	border-radius: 8px;
+}
+
+.faq-question {
+	width: 100%;
+	padding: 15px;
+	text-align: left;
+	font-size: 1.2rem;
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.faq-question:hover {
+	color: var(--neon-red);
+	text-shadow: 0 0 8px var(--neon-red);
+}
+
+.faq-answer {
+	display: none;
+	padding: 15px;
+	color: #ddd;
+	border-top: 1px solid #333;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+	background: #101015;
+	border-top: 2px solid var(--neon-red);
+	color: #bbb;
+}
+/* ===========================
+   TEAM CARD HOVER ANIMATION
+=========================== */
+.team-card {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-card:hover {
+	transform: translateY(-8px) scale(1.05);
+	box-shadow: 0 0 20px var(--neon-red);
+}
+
+/* RULE HOVER ANIMATION */
+#rulesList li {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#rulesList li:hover {
+	transform: translateX(5px);
+	box-shadow: 0 0 15px var(--neon-pink);
+}
+
+/* BACK TO TOP BUTTON */
+#backToTop {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	padding: 18px 24px; /* Bigger size */
+	font-size: 22px; /* Larger text */
+	font-weight: bold;
+	background: var(--neon-red);
+	color: #fff;
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+	display: none; /* Hidden initially */
+	box-shadow: 0 0 25px var(--neon-red), 0 0 50px var(--neon-red),
+		0 0 75px var(--neon-red);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	z-index: 1000;
+}
+
+#backToTop:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 25px var(--neon-pink);
+}
+.s {
+	color: #ff0066;
+	text-align: center;
+}
+.s:visited {
+	color: #ff0066;
+	text-align: center;
+}
+.s:hover {
+	color: #ff0066;
+	text-align: center;
+	text-decoration: underline;
+}
+a:visited {
+	color: blue;
+}
+a {
+	text-decoration: none;
+}
+.record-card {
+	background: var(--glass);
+	padding: 20px;
+	border: 2px solid var(--neon-pink);
+	border-radius: 10px;
+	-webkit-backdrop-filter: blur(6px);
+	        backdrop-filter: blur(6px);
+	transition: 0.3s ease;
+	cursor: pointer;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.record-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 0 25px var(--neon-red);
+	border-color: var(--neon-red);
+}
+#ko {
+	font-size: 2.2rem;
+	color: var(--neon-red);
+	text-shadow: 0 0 15px var(--neon-red);
+	text-align: center;
+}
+strong {
+	color: #ff3045;
+}

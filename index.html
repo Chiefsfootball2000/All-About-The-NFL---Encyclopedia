@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>All About the NFL — Encyclopedia</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All About The NFL - Encyclopedia | By: Veer Shah</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<header>
+		<h1>All About The NFL - Encyclopedia</h1>
+		<h2 class="subtitle">By: Veer Shah</h2>
+		<nav>
+			<a href="#home">Home</a>
+			<a href="#teams">Teams</a>
+			<a href="#players">Key Players</a>
+			<a href="#basics">Basics</a>
+			<a href="#rules">Rules</a>
+			<a href=".section-title">Records</a>
+			<a href="#faq">FAQs</a>
+			<a href="#sources">Sources</a>
+
+		</nav>
+	</header>
+
+	<section id="home" class="hero">
+		<div class="hero-content">
+			<h2>Welcome to the Ultimate NFL Encyclopedia</h2>
+			<p>Your complete guide to every team, player, rule, and detail in the NFL.</p>
+		</div>
+	</section>
+
+	<!-- ======================= TEAMS ======================= -->
+	<section id="teams">
+		<h2 class="section-title">NFL Teams</h2>
+		<input id="teamSearch" type="text" placeholder="Search Teams...">
+
+		<div id="teamGrid" class="team-grid">
+			<!-- Teams loaded by JS -->
+		</div>
+
+	</section>
+
+	<!-- ======================= KEY PLAYERS ======================= -->
+	<section id="players">
+		<h2 class="section-title">Key Players</h2>
+		<div id="playersContainer"></div>
+	</section>
+
+	<!-- ======================= BASICS ======================= -->
+	<section class="record-card">
+		<div>
+			<h2 id="ko">Basics of the NFL</h2>
+		</div>
+		<p>The <strong>National Football League (NFL)</strong> is a professional American football league, consisting of 32 teams split into two conferences: the <strong>AFC</strong> (American Football Conference) and the <strong>NFC</strong> (National Football Conference). These conferences are further divided into four divisions: North, South, East, and West, with each division housing four teams. The NFL is known for its physical, fast-paced gameplay, where teams of 11 players each compete to score by advancing the ball into the opposing team’s end zone, either by running with it or passing it. The main objective of the game is to score more points than the opponent, primarily by touchdowns and field goals.</p>
+
+		<h2>Scoring in the NFL</h2>
+		<p>A <strong>touchdown (TD)</strong> is the most valuable scoring play in the NFL, worth <span>6 points</span>. It occurs when a player carries the ball into the opponent's end zone or catches a pass there. After scoring a touchdown, the team has the opportunity to attempt an <strong>extra point</strong> (<span>1 point</span>) by kicking the ball through the goalposts, or they can attempt a <strong>two-point conversion</strong> (<span>2 points</span>) by running or passing the ball into the end zone again from the 2-yard line. Another common scoring play is a <strong>field goal</strong>, which is worth <span>3 points</span>. Teams usually attempt a field goal when they are unable to score a touchdown but are within range to kick the ball through the goalposts.</p>
+
+		<p>Another way to score is through a <strong>safety</strong>, which is worth <span class="highlight">2 points</span>. This happens when the defensive team tackles an offensive player with the ball in their own end zone. The NFL also features <strong>kickoffs</strong> and <strong>punts</strong>, where the team with possession of the ball kicks it to the opposing team, either to start a drive or to gain field position. Kicking specialists, including punters and kickers, play a crucial role in scoring and controlling field position.</p>
+
+		<h2>Game Structure</h2>
+		<p>Each NFL game is played in <strong>four quarters</strong>, each lasting <span class="highlight">15 minutes</span>. Between the second and third quarters, there is a halftime break. The game clock runs unless there is an incomplete pass, a player goes out of bounds, or certain penalties occur. If the score is tied at the end of regulation, the game goes into <strong>overtime</strong>. In regular season games, overtime is a 10-minute period where the first team to score wins. If no team scores during the overtime period, the game ends in a tie. However, in playoff games, overtime continues until one team scores.</p>
+
+		<h2>The NFL Season</h2>
+		<p>The <strong>NFL season</strong> is divided into three main parts: the <strong>regular season</strong>, the <strong>playoffs</strong>, and the <strong>Super Bowl</strong>. Each team plays 17 games in the regular season, with 8 or 9 games at home and the rest away. The playoff format includes the top 7 teams from each conference, who compete in a single-elimination tournament. The winners of the AFC and NFC Championship Games face off in the <strong>Super Bowl</strong>, which is the league's championship game, usually held in February. The winner of the Super Bowl is crowned the NFL champion for that season.</p>
+
+		<h2>Popularity and Impact</h2>
+		<p>While the NFL is hugely popular in the U.S., it also has a global following. The league is known for its major stars, including <strong>Tom Brady</strong> and <strong>Patrick Mahomes</strong>, who often define the league’s narratives and dominate media coverage. Teams like the <strong>Dallas Cowboys</strong>, <strong>New England Patriots</strong>, and <strong>Pittsburgh Steelers</strong> are some of the most successful and storied franchises in NFL history. With its unique blend of strategy, athleticism, and entertainment, the NFL has become an integral part of American culture, with games regularly drawing millions of viewers, especially during the Super Bowl.</p>
+
+	</section>
+
+	<!-- ======================= RULES ======================= -->
+	<section id="rules">
+		<h2 class="section-title">NFL Rules</h2>
+		<input id="ruleSearch" type="text" placeholder="Search Rules...">
+
+		<ul id="rulesList">
+			<!-- Rules loaded by JS -->
+		</ul>
+	</section>
+	<section class="record-card">
+		<h2 class="section-title">Top 10 NFL Records</h2>
+		<ul class="records-list">
+			<li><strong>Most Career Passing Yards:</strong> Tom Brady – 89,214 yards</li>
+			<li><strong>Most Career Touchdowns (Passing):</strong> Tom Brady – 649 touchdowns</li>
+			<li><strong>Most Career Rushing Yards:</strong> Emmitt Smith – 18,355 yards</li>
+			<li><strong>Most Career Rushing Touchdowns:</strong> Emmitt Smith – 164 touchdowns</li>
+			<li><strong>Most Career Receptions:</strong> Jerry Rice – 1,549 receptions</li>
+			<li><strong>Most Career Receiving Yards:</strong> Jerry Rice – 22,895 yards</li>
+			<li><strong>Most Career Receiving Touchdowns:</strong> Jerry Rice – 197 touchdowns</li>
+			<li><strong>Most Career Sacks:</strong> Bruce Smith – 200 sacks</li>
+			<li><strong>Most Points in a Season:</strong> LaDainian Tomlinson – 186 points (2006)</li>
+			<li><strong>Longest Field Goal:</strong> Cam Little – 68 yards (2025)</li>
+		</ul>
+
+	</section>
+	<!-- ======================= FAQ ======================= -->
+	<section id="faq">
+		<h2 class="section-title">Frequently Asked Questions</h2>
+
+		<div class="faq-item">
+			<button class="faq-question">What is the NFL?</button>
+			<div class="faq-answer">The NFL is the National Football League, consisting of 32 teams split across two conferences.</div>
+		</div>
+
+		<div class="faq-item">
+			<button class="faq-question">How long is an NFL game?</button>
+			<div class="faq-answer">An NFL game is 60 minutes long, divided into four 15-minute quarters.</div>
+		</div>
+
+		<div class="faq-item">
+			<button class="faq-question">Who plays in the Super Bowl?</button>
+			<div class="faq-answer">The champions of the AFC and NFC conferences compete in the Super Bowl.</div>
+		</div>
+	</section>
+
+	<!-- ======================= SOURCES ======================= -->
+	<section id="sources">
+		<h2 class="section-title">Sources</h2>
+		<ul>
+			<a target="_blank" href="https://www.nfl.com/">
+				<li class="s">NFL</li>
+			</a>
+			<li class="s"><a target="_blank" href="https://www.espn.com/">ESPN</li></a>
+			<a target="_blank" href="https://www.nfl.com/teams/">
+				<li class="s">Team Official Websites</li>
+			</a>
+		</ul>
+	</section>
+
+	<footer>
+		<p>&copy; 2025 NFL Encyclopedia by Veer Shah. All Rights Reserved.</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
