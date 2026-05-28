@@ -179,7 +179,7 @@ const teams = [
 		city: "Philadelphia",
 		founded: 1933,
 		site: "https://www.philadelphiaeagles.com/",
-		players: ["Jalen Hurts", "A.J. Brown", "Saquon Barkley"]
+		players: ["Jalen Hurts", "Cooper DeJean", "Saquon Barkley"]
 	},
 	{
 		name: "Pittsburgh Steelers",
